@@ -1,10 +1,10 @@
 const LINKS = {
     // 内部页面链接
     home: 'index.html',
-    about: '/pages/about.html',
-    history: '/pages/history.html',
-    brand: '/pages/brand.html',
-    word: '/pages/word.html'
+    about: '/ths-test.github.io/pages/about.html',
+    history: '/ths-test.github.io/pages/history.html',
+    brand: '/ths-test.github.io/pages/brand.html',
+    word: '/ths-test.github.io/pages/word.html'
     
 };
 
