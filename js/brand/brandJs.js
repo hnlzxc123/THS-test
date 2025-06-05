@@ -52,3 +52,69 @@ divLang.addEventListener('mouseleave', () => {
         divLang.classList.remove('active');
     }, 100);
 });
+
+const swiper = new Swiper('.swiper-range', {
+    slidesPerView: 8,
+    slidesPerGroup: 4,
+    // 配置选项
+    loop: false,                // 循环播放
+    autoplay: {
+        delay: 3000,             // 自动播放间隔（毫秒）
+    },
+    // // 响应式
+    // breakpoints: {
+    //     768: { slidesPerView: 2 },  // 屏幕宽度 >= 768px 时显示 2 个滑块
+    //     1024: { slidesPerView: 3 }, // 屏幕宽度 >= 1024px 时显示 3 个滑块
+    // },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        type: 'slider',      // 滑块类型
+        draggable: true,     // 允许拖动
+    },
+    pagination: {
+    el: '.swiper-pagination', // 分页指示器容器
+        clickable: true,         // 可点击切换
+    },
+    navigation: {
+        nextEl: '.swiper-button-next', // 下一页按钮
+        prevEl: '.swiper-button-prev', // 上一页按钮
+    },
+});
+
+const swiper3Columns = new Swiper('.swiper-part', {
+    slidesPerView: 5,
+    slidesPerColumn: 2,
+
+});
+const swiperVideo = new Swiper('.swiper-honor', {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    // 配置选项
+    loop: false,                // 循环播放
+    autoplay: {
+        delay: 3000,             // 自动播放间隔（毫秒）
+    },
+    // // 响应式
+    // breakpoints: {
+    //     768: { slidesPerView: 2 },  // 屏幕宽度 >= 768px 时显示 2 个滑块
+    //     1024: { slidesPerView: 3 }, // 屏幕宽度 >= 1024px 时显示 3 个滑块
+    // },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        type: 'slider',      // 滑块类型
+        draggable: true,     // 允许拖动
+    },
+    pagination: {
+    el: '.swiper-pagination', // 分页指示器容器
+        clickable: true,         // 可点击切换
+    },
+    navigation: {
+        nextEl: '.swiper-button-next', // 下一页按钮
+        prevEl: '.swiper-button-prev', // 上一页按钮
+    },
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化链接
+    initPageLinks();
+});

@@ -79,3 +79,8 @@ const swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev', // 上一页按钮
     },
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化链接
+    initPageLinks();
+});

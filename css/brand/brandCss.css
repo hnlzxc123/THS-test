@@ -216,6 +216,117 @@ img{
     height: 30px;
     margin-right: 5px;
 }
+.brand-range{
+    padding: 70px 0 85px;
+    background: #f7f7f7;
+}
+.brand-range .contain {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.range-tit,.brand-tit,.honor-tit{
+    visibility: visible;
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+.range-tit .string,.brand-tit .string,.honor-tit .string{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 42px;
+    height: 1px;
+    background: #000;
+    margin-left: -21px;
+}
+.range-info{
+    visibility: visible;
+    font-size: 20px;
+    color: #666;
+    text-align: center;
+    line-height: 30px;
+}
+.swiper-range {
+    max-width: 1080px;
+    margin: 40px auto;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.swiper-slide span {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 7px solid #ECEBF3;
+    border-radius: 50%;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    margin: 0px auto;
+}
+.swiper-slide span img {
+    margin-top: 20px;
+    width: 65px;
+    max-height: 55px;
+    object-fit: cover;
+}
+.brand-part{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3.5px 6.062px 21.6px 2.4px rgb(92 90 88 / 8%);
+    padding: 50px 70px;
+    border-top-left-radius: 120px;
+    border-bottom-right-radius: 120px;
+}
+.swiper-part .swiper-slide {
+    text-align: center;
+    padding: 15px 0;
+}
+.swiper-part .swiper-container {
+    padding-bottom: 40px;
+}
+.swiper-part .swiper-slide img {
+    width: 124px;
+    max-height: 100px;
+    object-fit: cover;
+}
+.brand-honor {
+    overflow: hidden;
+    padding: 70px 0;
+    background: #fff;
+}
+.swiper-honor{
+    padding-bottom: 50px;
+}
+.brand-honor .swiper-slide .com-img {
+    width: 312px;
+    height: 312px;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    /* padding: 30px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-honor .swiper-slide .com-img img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+}
+.brand-honor .swiper-slide h4 {
+    color: #666;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+
 .footer-container {
     padding: 60px 0;
     background: #3d3d3d;

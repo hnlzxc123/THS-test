@@ -52,3 +52,8 @@ divLang.addEventListener('mouseleave', () => {
         divLang.classList.remove('active');
     }, 100);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化链接
+    initPageLinks();
+});

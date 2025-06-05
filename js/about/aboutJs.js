@@ -52,3 +52,44 @@ divLang.addEventListener('mouseleave', () => {
         divLang.classList.remove('active');
     }, 100);
 });
+
+const counterElements = document.querySelectorAll('.counter')
+counterElements.forEach(counterElement => {
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        // 设置目标值和动画持续时间
+        const targetValue = counterElement.textContent;
+        const duration = 2000; // 2秒
+        const frameDuration = 1000 / 60; // 60帧/秒
+        const totalFrames = Math.round(duration / frameDuration);
+        const valueIncrement = targetValue / totalFrames;
+        
+        // 初始化当前值
+        let currentValue = 0;
+        
+        // 定义动画函数
+        const animateCounter = () => {
+            currentValue += valueIncrement;
+            
+            // 确保不超过目标值
+            if (currentValue >= targetValue) {
+                counterElement.textContent = targetValue;
+                return;
+            }
+            
+            // 四舍五入到整数并更新显示
+            counterElement.textContent = Math.round(currentValue);
+            
+            // 请求下一帧动画
+            requestAnimationFrame(animateCounter);
+        };
+        
+        // 开始动画
+        animateCounter();
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化链接
+    initPageLinks();
+});

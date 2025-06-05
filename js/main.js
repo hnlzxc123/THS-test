@@ -103,3 +103,8 @@ let slideInterval = setInterval(nextSlide, 5000);
 
 // 初始化轮播
 showSlide(0);
+
+document.addEventListener('DOMContentLoaded', function() {
+    // 初始化链接
+    initLinks();
+});
